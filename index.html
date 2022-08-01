@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>群星</title>
+</head>
+<body>
+	<div class="container">
+		<canvas id="myCanvas"></canvas>
+	</div>
+	<div class="data">
+		<form action="">
+			X轴位置: <input value="0" type="number" id="locationX">
+			X轴初速度: <input value="0" type="number" id="velocityX"><br>
+			Y轴位置: <input value="0" type="number" id="locationY">
+			Y轴初速度: <input value="0" type="number" id="velocityY"><br>
+			质量: <input value="50" type="number" id="mass">
+			<button type="button" onclick="addStar()">新增天体</button>
+			<button type="button" onclick="addRandomStar()">随机天体</button>
+			<button type="button" onclick="start()">开始</button>
+			<button type="button" onclick="stop()">暂停</button>
+			<button type="button" onclick="restore()">还原</button>
+		</form>
+	</div>
+	<script src="public.js"></script>	
+	<script src="star.js"></script>	
+	<script src="stellaris.js"></script>	
+</body>
+</html>
